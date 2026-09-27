@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portafolio de José Ignacio Ortiz Salazar - Estudiante de Programación en Campuslands">
+    <meta name="author" content="José Ignacio Ortiz Salazar">
+
+    <title>Portafolio | José Ignacio Ortiz Salazar</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- ============ HEADER / NAV ============ -->
+    <header class="header">
+        <nav class="nav container" aria-label="Navegación principal">
+            <a href="#hero" class="nav__logo">José Ignacio</a>
+
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item"><a href="#hero" class="nav__link">Inicio</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">Sobre mí</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link">Proyectos</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>
+            </ul>
+
+            <!-- Botón hamburguesa -->
+            <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ============ HERO ============ -->
+        <section class="hero" id="hero" aria-labelledby="hero-title">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <p class="hero__subtitle">¡Hola! Soy</p>
+                    <h1 class="hero__title" id="hero-title">José Ignacio Ortiz Salazar</h1>
+                    <h2 class="hero__role">Estudiante de Programación en Campuslands</h2>
+                    <p class="hero__text">
+                        Soy perseverante y orientado a soluciones. No me quedo quieto ante los desafíos,
+                        siempre busco la mejor manera de resolver problemas y seguir aprendiendo.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#projects" class="btn btn--primary">Ver proyectos</a>
+                        <a href="#contact" class="btn btn--secondary">Contáctame</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ ABOUT ============ -->
+        <section class="about" id="about" aria-labelledby="about-title">
+            <div class="container">
+                <h2 class="section__title" id="about-title">Sobre mí</h2>
+                <p class="section__subtitle">Conóceme un poco más</p>
+
+                <div class="about__grid">
+                    <div class="about__card">
+                        <h3> Mi enfoque</h3>
+                        <p>
+                            Soy una persona perseverante que no se rinde ante los desafíos.
+                            Me caracterizo por buscar activamente soluciones y no quedarme quieto.
+                            Estoy en constante aprendizaje y desarrollo de habilidades en programación.
+                        </p>
+                    </div>
+                    <div class="about__card">
+                        <h3>💻 Tecnologías</h3>
+                        <ul class="skills">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>SQL</li>
+                            <li>Git & GitHub</li>
+                            <li>Modelado de Datos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ PROJECTS ============ -->
+        <section class="projects" id="projects" aria-labelledby="projects-title">
+            <div class="container">
+                <h2 class="section__title" id="projects-title">Proyectos</h2>
+                <p class="section__subtitle">Algunos trabajos que he realizado</p>
+
+                <div class="projects__grid">
+                    <!-- Proyecto 1 -->
+                    <article class="project-card">
+                        <div class="project-card__icon">🍕</div>
+                        <div class="project-card__content">
+                            <h3>La Pizzería Don Piccolo</h3>
+                            <p>Sistema de gestión de pedidos de pizza que permite obtener resúmenes de ventas, totales
+                                por día, promedio de pedidos y análisis de ingresos.</p>
+                            <div class="project-card__links">
+                                <a href="https://github.com/joseignacioortizsalazar/La-pizzer-a-Don-Piccolo"
+                                    class="btn btn--small" target="_blank" rel="noopener">Ver código</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 2 -->
+                    <article class="project-card">
+                        <div class="project-card__icon"></div>
+                        <div class="project-card__content">
+                            <h3>Campus Pizza SQL</h3>
+                            <p>Sistema de gestión de base de datos para Campus Pizza. Incluye estructura, datos de
+                                prueba y 20 consultas SQL analíticas.</p>
+                            <div class="project-card__links">
+                                <a href="https://github.com/joseignacioortizsalazar/campus-pizza-sql"
+                                    class="btn btn--small" target="_blank" rel="noopener">Ver código</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 3 -->
+                    <article class="project-card">
+                        <div class="project-card__icon">📚</div>
+                        <div class="project-card__content">
+                            <h3>Tienda de Libros - Modelo ER</h3>
+                            <p>Diseño de base de datos para una tienda de libros: normalización hasta 3FN, diagrama
+                                conceptual E-R y diagrama UML E-R con claves y cardinalidades.</p>
+                            <div class="project-card__links">
+                                <a href="https://github.com/joseignacioortizsalazar/tienda-libros-modelo-er"
+                                    class="btn btn--small" target="_blank" rel="noopener">Ver código</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section class="contact" id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 class="section__title" id="contact-title">Contacto</h2>
+                <p class="section__subtitle">¡Hablemos!</p>
+
+                <div class="contact__grid">
+                    <a href="mailto:n45997931@gmail.com" class="contact__card">
+                        <span class="contact__icon">📧</span>
+                        <h3>Email</h3>
+                        <p>n45997931@gmail.com</p>
+                    </a>
+                    <a href="https://github.com/joseignacioortizsalazar" target="_blank" rel="noopener"
+                        class="contact__card">
+                        <span class="contact__icon">💻</span>
+                        <h3>GitHub</h3>
+                        <p>@joseignacioortizsalazar</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jose-ignacio-ortiz-salazar-9a4881437/" target="_blank"
+                        rel="noopener" class="contact__card">
+                        <span class="contact__icon">💼</span>
+                        <h3>LinkedIn</h3>
+                        <p>/in/jose-ignacio-ortiz-salazar</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 José Ignacio Ortiz Salazar.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
